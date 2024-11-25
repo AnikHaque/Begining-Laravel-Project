@@ -17,4 +17,10 @@ class WelcomeController extends Controller
        function dashboard(){
         return view('dashboard');
     }
+
+ function dynamic(Request $request): string {
+    $name = $request->name; // Access the name property from the request
+    return "My name is {$name}"; // Proper syntax for variable interpolation
+}
+
 }

@@ -10,3 +10,4 @@ Route::get('/', function () {
 Route::get('/hello', [WelcomeController::class,'sayHello']);
 Route::get('/hellofromostad',[WelcomeController::class,'courseName']);
 Route::get('/dashboard',[WelcomeController::class,'dashboard']);
+Route::get('/dashboard/{name}',[WelcomeController::class,'dynamic']);
